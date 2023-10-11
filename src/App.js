@@ -5,9 +5,17 @@ import Intro from './homepage/About us/Intro';
 import Reason from './homepage/Choose us/Reason';
 import Doctor from './homepage/Team/Doctor';
 import Footer from './homepage/Footer/Footer';
-import Treatments from './homepage/Treatments';
 import HeroImage from './homepage/HeroImage/welcome';
 import PatientLogin from './Logins/PatientLogin';
+import Treatments from './TypesOfTreatments/Treatments';
+import Request from './Appointment/Request'
+import Register from './Logins/registration/Register';
+import Treatment1 from './TypesOfTreatments/Treatmentpages/Dryneedle';
+import Treatment2 from './TypesOfTreatments/Treatmentpages/Postureandgait';
+import Treatment3 from './TypesOfTreatments/Treatmentpages/Physiotherapy';
+import Treatment4 from './TypesOfTreatments/Treatmentpages/Footalignment';
+
+
 
 function App() {
   const homePage = (
@@ -15,7 +23,7 @@ function App() {
       <HeroImage />
       <Intro />
       <Reason />
-      <Doctor />ß
+      <Doctor />
     </>
   );
   return (
@@ -23,9 +31,15 @@ function App() {
       <Router>
         <Navbar />
         <Routes>
-          <Route path='/treatments' element={<Treatments />} />
+        <Route path='/treatments' element={<Treatments />} />
+        <Route path='/DryNeedling' element={<Treatment1 />} />
+        <Route path='/Posture' element={<Treatment2 />} />
+        <Route path='/Physiotherapy' element={<Treatment3 />} />
+        <Route path='/Footalignment' element={<Treatment4 />} />
           <Route path='/login' element={<PatientLogin />} />
-          <Route path='' element={homePage}>
+          <Route path='/register' element={<Register />} />
+          <Route path='/appointment' element={<Request />} />
+          <Route path='/' element={homePage}>
           </Route>
         </Routes>
         <Footer />
