@@ -2,6 +2,11 @@ import React from 'react';
 import { MDBFooter, MDBContainer, MDBRow, MDBCol, MDBIcon } from 'mdb-react-ui-kit';
 import { Link } from 'react-router-dom';
 import Request from '../../Appointment/Request';
+import {
+  FaFacebookSquare,
+  FaInstagramSquare,
+  FaYoutubeSquare,
+} from "react-icons/fa";
 
 
 
@@ -26,7 +31,26 @@ function Footer() {
               <p>
               <Link to='/appointment' element={<Request/>}>Request Appointment </Link>
               </p>
-             
+              <li style={{fontSize: '2rem'}}>
+              <a
+                href="https://www.facebook.com/saarhealthcare/"
+                target="_blank">
+                <FaFacebookSquare className="facebook" />
+              </a>
+           
+            
+              <a
+                href="https://www.instagram.com/saarhealthcare/"
+                target="_blank">
+                <FaInstagramSquare className="instagram" />
+              </a>
+           
+              <a
+                href="https://www.youtube.com/@saarhealthcare2279"
+                target="_blank">
+                <FaYoutubeSquare className="youtube" />
+              </a>
+            </li>
              
             </MDBCol>
 
@@ -34,29 +58,22 @@ function Footer() {
               <h6 className='text-uppercase fw-bold mb-4'>Contact</h6>
               <p>
                 <MDBIcon icon="home" className="me-2" />
-                214 sun gravitas,Shyamal CrossRoad,Ahmedabad-380015
+                214 sun gravitas,Shyamal CrossRoad,Ahmedabad
               </p>
               <p>
                 <MDBIcon icon="envelope" className="me-3" />
-                info@example.com
+                saarhealthcare94@gmail.com
               </p>
               <p>
-                <MDBIcon icon="phone" className="me-3" /> +91
+                <MDBIcon icon="phone" className="me-3" /> +91 95865 98461
               </p>
-              <p>
-                <MDBIcon icon="print" className="me-3" /> +91
-              </p>
+            
             </MDBCol>
           </MDBRow>
         </MDBContainer>
       </section>
 
-      {/* <div className='text-center p-4' style={{ backgroundColor: 'rgba(0, 0, 0, 0.05)' }}>
-        © 2021 Copyright:
-        <a className='text-reset fw-bold' href='https://mdbootstrap.com/'>
-          MDBootstrap.com
-        </a>
-      </div> */}
+   
     </MDBFooter>
   );
 }

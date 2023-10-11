@@ -18,8 +18,8 @@ const Navbar = () => {
  <nav className="navbar navbar-expand-lg bg-light fixed-top">
 <div className="container-fluid">
         <div className='logo'>
-          <h2><span></span>SAAR
-            <span>H</span>HealthCare</h2>
+          <h2>SAAR
+            HealthCare</h2>
         </div>
        
   
@@ -42,21 +42,21 @@ const Navbar = () => {
           <ul className="social-media-desktop">
             <li>
               <a
-                href="#"
+                href="https://www.facebook.com/saarhealthcare/"
                 target="_blank">
                 <FaFacebookSquare className="facebook" />
               </a>
             </li>
             <li>
               <a
-                href="#"
+                href="https://www.instagram.com/saarhealthcare/"
                 target="_blank">
                 <FaInstagramSquare className="instagram" />
               </a>
             </li>
             <li>
               <a
-                href="#"
+                href="https://www.youtube.com/@saarhealthcare2279"
                 target="_blank">
                 <FaYoutubeSquare className="youtube" />
               </a>

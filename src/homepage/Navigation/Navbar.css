@@ -1,5 +1,7 @@
 
-
+.navbar{
+  display: inline;
+}
 
 html {
   font-size: 62.5%;
@@ -17,7 +19,7 @@ li {
 /* navbar style start  */
 
 .menu-link{
-  grid-template-columns: 3fr repeat(3, 1fr) ;
+  display: inline;
 
 }
 
@@ -25,7 +27,7 @@ li {
 .social-media ul {
   height: 4rem;
   display: grid;
-  grid-template-columns: 3fr repeat(3, 1fr);
+  grid-template-columns: 28fr repeat(3, 1fr);
   align-items: center;
   justify-content: space-around;
 
@@ -61,16 +63,16 @@ li {
 .menu-link ul li a {
   text-transform: capitalize;
   color: rgba(0, 0, 3, 0.8);
-  transition: 0.5s;
   text-decoration: none;
-  justify-content: left;
-  align-items: start;
+
+
+
 }
 .menu-link ul li:hover > a {
   transform-origin: left;
   text-decoration:overline;
   color: white;
-  transition: 6s;
+  transition: 10s;
 
 }
 
@@ -153,10 +155,7 @@ li {
     align-items: center;
   }
 
-  .social-media .hamburger-menu {
-    display: block;
-    font-size: 2.5rem;
-  }
+  
 }
 
 
